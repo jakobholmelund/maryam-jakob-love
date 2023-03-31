@@ -15,6 +15,13 @@ html {
   min-height: 100%;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* This will ensure the menu is on top of other content while scrolling */
+}
+
 .header-wrapper {
   padding-bottom: 30px;
 }

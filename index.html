@@ -147,8 +147,8 @@
         </div>
         <!-- End Hero Content-->
         <!-- Begin Hero Menu -->
-        <div class="hero-foot ">
-          <div class="hero-foot--wrapper">
+        <div class="hero-foot " id="sticky-menu">
+          <div class="hero-foot--wrapper" id="sticky-wrapper">
             <div class="columns">
               <div class="column is-12 hero-menu-desktop has-text-centered">
                 <ul>
@@ -477,7 +477,6 @@
     <!-- End Main Content -->
 
     <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/menikah.js"></script>
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
@@ -486,6 +485,20 @@
         easing: "ease-out",
         duration: 800,
       });
+
+      window.onscroll = function() {makeSticky()};
+
+      var menu = document.getElementById("sticky-menu");
+      var wrapper = document.getElementById("sticky-wrapper");
+      var sticky = wrapper.offsetTop;
+
+      function makeSticky() {
+        if (window.pageYOffset >= sticky) {
+          menu.classList.add("sticky");
+        } else {
+          menu.classList.remove("sticky");
+        }
+      }
     </script>
   </body>
 </html>
