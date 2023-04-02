@@ -53,6 +53,9 @@
     <div class="header-wrapper" id="home">
       <!-- Begin Hero -->
       <section class="hero is-large">
+
+        <video class="your-video-class" data-src="image/test2.mp4" autoplay muted loop></video>
+ 
         <!-- Begin Mobile Nav -->
         <nav class="navbar is-transparent is-hidden-desktop" id="mobile-menu">
           <!-- Begin Burger Menu -->
@@ -186,11 +189,6 @@
     <div class="main-content">
     <!-- Begin regular-section-->
      <section class="section-light no-padding-top regular-section has-text-centered has-vertically-aligned-content" id="regular-section">
-      <div data-aos="fade-up" data-aos-easing="linear">
-        <img src="image/3859726731_A festival on the beach with a festival theme, log_xl-beta-v2-2-2.png" class="bismillah has-text-centered" alt="woooooow">
-      </div>
-
-
         <p class="bodytext" data-aos="fade-up" data-aos-easing="linear">
           Du kender følelsen, sommersolen bager på solbrændte næser og arme, i hånden er den velskænket fadøl klar, 
           <br>
@@ -321,10 +319,13 @@ Kommer du med offentligt transport, kan du stå af ved Nyled Station, og ved aft
       <!-- End Parkering Content -->
       
   <!-- Begin Parkering Section -->
-  <section class="section-darker" id="Stay" >
+  <section class="section-darker has-text-centered" id="Stay" >
     <div class="container">
       <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
         <h1 class="title has-text-centered section-title">Overnatning</h1>
+        <div data-aos="fade-up center has-text-centered" data-aos-easing="linear">
+          <img src="image/camping.png" class="tent has-text-centered" alt="woooooow">
+        </div>
         <p class="tempat is-larger has-text-centered">
            
           Festival rimer jo på mange måder på camping! <br><br>
@@ -558,6 +559,35 @@ Kommer du med offentligt transport, kan du stå af ved Nyled Station, og ved aft
       desktopMenu.classList.remove("sticky");
       mobileMenu.classList.remove("sticky");
     }}
+
+    document.addEventListener("DOMContentLoaded", function() {
+  var lazyVideos = [].slice.call(document.querySelectorAll(".your-video-class"));
+
+  if ("IntersectionObserver" in window) {
+    let lazyVideoObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          let lazyVideo = entry.target;
+          lazyVideo.src = lazyVideo.dataset.src;
+          lazyVideo.load();
+          lazyVideoObserver.unobserve(lazyVideo);
+        }
+      });
+    });
+
+    lazyVideos.forEach(function(lazyVideo) {
+      lazyVideoObserver.observe(lazyVideo);
+    });
+  } else {
+    // If the IntersectionObserver API is not supported, load the video immediately
+    lazyVideos.forEach(function(lazyVideo) {
+      lazyVideo.src = lazyVideo.dataset.src;
+      lazyVideo.load();
+    });
+  }
+});
     </script>
+
+    
   </body>
 </html>
