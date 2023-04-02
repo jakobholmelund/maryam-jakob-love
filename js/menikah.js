@@ -114,6 +114,8 @@ $(document).ready(function($) {
   });
 });
 $(window).on("load", function() {
-  var Body = $("body");
-  Body.addClass("preloader-site");
+  setTimeout(function() {
+    $(".preloader-wrapper").fadeOut();
+    $("body").removeClass("preloader-site");
+  }, 100); // You can adjust the timeout value as needed
 });

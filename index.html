@@ -41,7 +41,7 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
   </head>
 
-  <body>
+  <body class="preloader-site">
     <!-- Begin Preloader -->
     <div class="preloader-wrapper">
       <div class="preloader">
@@ -54,7 +54,7 @@
       <!-- Begin Hero -->
       <section class="hero is-large">
         <!-- Begin Mobile Nav -->
-        <nav class="navbar is-transparent is-hidden-desktop">
+        <nav class="navbar is-transparent is-hidden-desktop" id="mobile-menu">
           <!-- Begin Burger Menu -->
           <div class="navbar-brand is-fixed-top">
             <div class="navbar-burger burger" data-target="mobile-nav">
@@ -67,13 +67,8 @@
           <div id="mobile-nav" class="navbar-menu">
             <div class="navbar-end">
               <div class="navbar-item">
-                <a class="navbar-item" href="#Dato">
-                  Dato
-                </a>
-              </div>
-              <div class="navbar-item">
                 <a class="navbar-item" href="#Lokation">
-                  Lokation
+                  Sted
                 </a>
               </div>
               <div class="navbar-item">
@@ -81,15 +76,9 @@
                   Parkering
                 </a>
               </div>
-              
-              <div class="navbar-item">
-                <a class="navbar-item" href="#tentang-sherly-daeng">
-                  Tentang Sherly dan Daeng
-                </a>
-              </div>
               <div class="navbar-item">
                 <a class="navbar-item" href="#rsvp">
-                  RSVP
+                  SU
                 </a>
               </div>
             </div>
@@ -107,10 +96,16 @@
                 </br>
                 Lyngvejen 28B
                 </br>
-                Nykoebing Sjaelland
+                4500 Nykøbing Sjælland
               
             </h4>
           </div>
+        <div class="main-content has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+          <a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NjloamVjaG9ja3M2YWI5cDZjcGowYjlrNmtyNjhiOW82OWlqaWI5ajYxaWo2ZTlrY29xM2FkYjZjayBqYWtvYmhvbG1lbHVuZEBt&tmsrc=jakobholmelund%40gmail.com" target="_blank" class="button has-tooltip btn-cta" data-tooltip="Add to Calendar" target="_blank" data-aos="zoom-in">
+            <i class="far fa-calendar-plus"></i>
+            &nbsp;&nbsp;Google Calendar
+          </a>
+        </div>
           <!-- Start Countdown -->       
           <div>
             <ul id="hitungmundur" >
@@ -152,21 +147,29 @@
             <div class="columns">
               <div class="column is-12 hero-menu-desktop has-text-centered">
                 <ul>
-                  <li class="is-active">
-                    <a href="#home">Home</a>
+                  <li>
+                    <a href="#home">Hjem</a>
                   </li>
                   <li>
-                    <a href="#Dato">Dato</a>
+                    <a href="#Lineup">Line-up</a>
                   </li>
                   <li>
-                    <a href="#Lokation">Lokation</a>
+                    <a href="#Lokation">Sted</a>
                   </li>
                   <li>
-                    <a href="#tentang-sherly-daeng">Jakob & Maryam</a>
+                    <a href="#Transport">Transport & Parkering</a>
                   </li>
-
                   <li>
-                    <a href="#rsvp">RSVP</a>
+                    <a href="#Stay">Overnatning</a>
+                  </li>
+                  <li>
+                    <a href="#Toasts">Indslag & Taler</a>
+                  </li>
+                  <li>
+                    <a href="#Gifts">Gaver</a>
+                  </li>
+                  <li>
+                    <a href="#rsvp">Tilmelding</a>
                   </li>
                 </ul>
               </div>
@@ -198,7 +201,7 @@
           Men den er ikke helt som den plejer, for på denne dag, møder den farverige festivalstemning kærligheden fra strandbrylluppet som holdes ved Nordstrand. 
           <br>
           Med al vores hjertevarme byder vi dig velkommen til vores kærlighedsfest!
-          <br>
+          <br><br><br>
           Kærlig hilsen
         </p>
 
@@ -222,67 +225,36 @@
         <span class="space40px"></span>
         <span class="space40px"></span>
       </section>
-      <!-- End regular-section-->    
-      
-      <!-- Begin Dato Section -->
-      <section class="section-dark" id="Dato">
-        <div class="container">
+      <!-- End regular-section-->  
 
-          <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
-            <h1 class="title has-text-centered section-title">Dato</h1>
-          </div>
-          <div class="columns is-multiline" data-aos="fade-up" data-aos-easing="linear">
-            <div
-              class="column is-4 has-vertically-aligned-content">
-            
-              <p class="is-larger has-text-centered">
-                  <div class="Dato tanggal-hari has-text-centered">1</div> 
-                  <div class="Dato tanggal-angka has-text-centered">Juli</div>
-                  <div class="Dato tanggal-bulan has-text-centered">2023</div>
-              </p>
-            
-            </div>
-            <div class="column is-4 has-vertically-aligned-content">
-            
-              <p class="Dato is-larger has-text-centered">
-                Tidspunkt:
-                <br>
-                <strong>14.00</strong>
-              </p>
-            
-            </div>
+      <!-- Begin lineup-section-->
+     <section class="section-darker" id="Lineup">
+      <div class="container">
+        <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
+          <h1 class="title has-text-centered section-title">Line-up</h1>
 
-            <div class="column is-4 has-vertically-aligned-content">
-              
-              <h1 class="Dato is-larger has-text-centered">
-                Mad:
-                <br>
-                <strong>18.00  - 22.00</strong>
-              </h1>
-              
-              
-            </div>
 
-          </div>
+          <ul>
+              <li>14:00 velkomst og pagne </li>
+              <li>16:00 ceremoni på stranden </li>
+              <li>17.30-20:00 food trucks</li>
+              <li>21.00 kage</li>
+              <li>22.00 bål på stranden </li>
+              <li>24.00 natmad and dance</li>
+            </ul>
+
         </div>
-        <div class="space40px"></div>
-        <div class="main-content has-text-centered" data-aos="fade-up" data-aos-easing="linear">
-          <a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NjloamVjaG9ja3M2YWI5cDZjcGowYjlrNmtyNjhiOW82OWlqaWI5ajYxaWo2ZTlrY29xM2FkYjZjayBqYWtvYmhvbG1lbHVuZEBt&tmsrc=jakobholmelund%40gmail.com" target="_blank" class="button has-tooltip btn-cta" data-tooltip="Add to Calendar" target="_blank" data-aos="zoom-in">
-            <i class="far fa-calendar-plus"></i>
-            &nbsp;&nbsp;Google Calendar
-          </a>
-        </div>
+      </div>
+
       </section>
-      <!-- End Dato Content -->
+      <!-- End lineup-section-->    
 
       <!-- Begin Lokation Section -->
-      <section class="section-darker" id="Lokation" >
+      <section class="section-light" id="Lokation" >
         <div class="container">
           <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
-            <h1 class="title has-text-centered section-title">Lokation</h1>
+            <h1 class="title has-text-centered section-title">Sted</h1>
             <p class="tempat is-larger has-text-centered">
-              <strong>Strandhytten</strong>
-              <br>
               Lyngvejen 28B, 4500 Nykøbing Sjælland
               <br>
             </p>
@@ -302,15 +274,19 @@
       <!-- End Lokation Content -->
 
       <!-- Begin Parkering Section -->
-      <section class="section-darker" id="Parkering" >
+      <section class="section-darker" id="Transport" >
         <div class="container">
           <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
-            <h1 class="title has-text-centered section-title">Parkering</h1>
+            <h1 class="title has-text-centered section-title">Transport & Parkering</h1>
             <p class="tempat is-larger has-text-centered">
-              <strong>Strandhytten</strong>
+              <strong>Bil</strong>
               <br>
-              Lyngvejen 28B, 4500 Nykøbing Sjælland
+              
+Kommer du i bil, har du mulighed for at parkere på en parkeringsplads i nærheden, se kort nedenfor. 
+<br><br>
+              <strong>Tog</strong>
               <br>
+Kommer du med offentligt transport, kan du stå af ved Nyled Station, og ved aftale, skal vi nok sørge for du bliver hentet der.
             </p>
           </div>
           <div class="section-map" data-aos="fade-up" data-aos-easing="linear">
@@ -326,98 +302,82 @@
         </div>
       </section>
       <!-- End Parkering Content -->
-
-      <!-- Begin Tentang Sherly and Daeng -->
-      <section class="section-light regular-section is-fullheight" id="tentang-sherly-daeng">
+      <!-- Begin Parkering Section -->
+      <section class="section-light" id="Toasts" >
         <div class="container">
-          <div class="columns is-multiline">  
-          <div class="column has-text-centered is-12 prolog">
-            <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">Tentang Sherly dan Daeng</h1>
-          <!-- IMAGES -->  
-        <div class=" tile">
-          <div class="tile is-ancestor">
-          <div class="tile is-parent">
-            <article class="tile is-child foto1 notification foto1" data-aos="fade-up" data-aos-easing="linear">
-              <div class="content">
-                <p class="title-foto">November 2018</p>
-                <p class="subtitle-foto">
-                  Pertama kali saling kenal di <a href="https://cashbac.com" target="_blank">Cashbac</a>
-                </p>
-              </div>
-            </article>
-          </div>
-          <div class="tile is-parent">
-            <article class="tile is-child notification foto2" data-aos="fade-up" data-aos-easing="linear">
-              <div class="content">
-                <p class="title-foto">
-                  Desember 2018 - Februari 2019
-                </p>
-                <p class="subtitle-foto">
-                  Satu kantor, satu divisi, dan posisi tempat duduk saling membelakangi.
-                </p>   
-              </div>            
-            </article>
-          </div>
-          <div class="tile is-parent">
-            <article class="tile is-child notification foto3" data-aos="fade-up" data-aos-easing="linear">
-              <div class="content">  
-                <p class="title-foto">
-                  Maret 2019
-                </p>
-                <p class="subtitle-foto">
-                  Cerita cinta dimulai
-                </p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-      <div class="space24px"></div>
-      <div class="tile is-ancestor">
-        <div class="tile is-parent">
-          <article class="tile is-child notification foto6" data-aos="fade-up" data-aos-easing="linear">
-            <div class="content">
-              <p class="title-foto">Juni 2019</p>
-              <p class="subtitle-foto">Pertemuan 2 keluarga</p>
-            </div>
-          </article>
-        </div>
-        <div class="tile is-parent">
-          <article class="tile is-child notification foto4" data-aos="fade-up" data-aos-easing="linear">
-            <div class="content">
-              <p class="title-foto">Desember 2019</p>
-              <p class="subtitle-foto">Lamaran</p>
-            </div>
-          </article>
-        </div>
-        <div class="tile is-parent">              
-          <article class="tile is-child notification foto5" data-aos="fade-up" data-aos-easing="linear">
-            <div class="content">
-              <p class="title-foto">Maret 2020</p>
-              <p class="subtitle-foto">Menikah</p>
-            </div>
-          </article>
-        </div>
-      </div>   
-          <!-- IMAGES -->
-          <div class="space40px"></div>
-            <div data-aos="fade-up" data-aos-easing="linear">
-              <img src="image/divider-leaves.png" class="divider has-vertically-align" alt="~~~">
-            </div> 
-            <div class="space40px"></div>
-            <div class="space40px"></div>
+          <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
+            <h1 class="title has-text-centered section-title">Indslag og taler </h1>
+            <p class="tempat is-larger has-text-centered">
 
+              
+      Men er indslag stadig velkomne og hvornår skal min pragtfulde tale så holdes? <br><br>
+      Vi vil blive glad for indslag og taler, der er dog ingen toastmaster, <br>
+      istedet er der en klokke - ringes der på den betyder det samling og fælles info/indslag/tale - det sted hvor der ringes med klokken :-)
+    
+            </p>
           </div>
         </div>
       </section>
-      <!-- End Tentang Sherly dan Daeng -->
+      <!-- End Parkering Content -->
+      
+  <!-- Begin Parkering Section -->
+  <section class="section-darker" id="Stay" >
+    <div class="container">
+      <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
+        <h1 class="title has-text-centered section-title">Overnatning</h1>
+        <p class="tempat is-larger has-text-centered">
+           
+          Festival rimer jo på mange måder på camping! <br><br>
+
+          Så tag meget gerne dit/jeres eget telt med og slå det op i Camp zonen. <br><br>
+          Kom i såfald gerne lidt før, <br>
+          fx ved 12 tiden, <br>
+          for at slå telt op og lukke luft i madrassen. <br><br>
+          
+          Hvis teltbadun og sovepose ikke lige er dig, <br>
+          så er der også mulighed for enten at leje et sommerhus i nærheden eller booke en nat på hotel Pandekagehuset.
+                
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- End Parkering Content -->
+
+        <!-- Begin Parkering Section -->
+      <section class="section-light" id="Gifts" >
+        <div class="container">
+          <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
+            <h1 class="title has-text-centered section-title">Gave</h1>
+            <p class="tempat is-larger has-text-centered">
+              Udlandsrejser er det vi begge er så super passioneret omkring, <br>
+              det er her vi udvider vores horisont, <br>
+              udforsker det ukendte og ser det usete. <br><br>
+
+              Det er disse eventyrer vi tænker tilbage på og vil elske at få mange flere af. <br><br>
+              
+              Derfor ønsker vi os allerhelst et bidrag til vores rejsefond. <br><br>
+              
+              Den kan du donere til på følgende måde…xxx.<br><br>
+              
+              Derudover vil det glæde os utroligt meget, <br>
+              hvis du har lyst til at tage noget med til gæstebogen, <br>
+              det kunne fx være et billede, <br>
+              et udklip af et gammel brev eller et andet minde, <br>
+              som kunne efterlades som en personlig hilsen i bogen. <br><br>
+              
+              Vi laver et lille krea hjørne på dagen, så gaggede eller søde saluts kan slippes løs.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- End Parkering Content -->
 
       <!-- Begin RSVP Content -->
       <section class="section-dark contact" id="rsvp">
         <div class="container">
           <div class="columns is-multiline">          
             <div class="column is-12 prolog">
-              <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">RSVP</h1>
+              <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">Tilmelding</h1>
             </div>
             <div class="column is-12 prolog has-text-centered" data-aos="fade-up" data-aos-easing="linear">
               
@@ -441,7 +401,7 @@
               
               <div class="field is-horizontal">
                   <div class="field-label is-normal">
-                    <label class="label">Navn</label>
+                    <label class="label">Info</label>
                   </div>
                   <div class="field-body">
                     <div class="field">
@@ -488,15 +448,16 @@
                     <label class="label">Kommer ?</label>
                   </div>
                   <div class="field-body">
-                    <div class="field is-narrow">
-                      <div class="control">
-                        <label class="radio">
-                          <input type="radio" name="Comming">
-                          Ja selvfølgelig
+                    <div class="field">
+                      <div class="control has-text-centered centered">
+                        <label class="radio is-size-4">
+                          <input type="radio"  class="big-radio" name="Comming" checked>
+                          Kommer Selvfølgelig !
                         </label>
-                        <label class="radio">
-                          <input type="radio" name="Comming">
-                          Nej desværre
+                        <br>
+                        <label class="radio is-size-4">
+                          <input type="radio"  class="big-radio" name="Comming">
+                          Kommer Desværre Ikke
                         </label>
                       </div>
                     </div>
@@ -584,17 +545,19 @@
 
       window.onscroll = function() {makeSticky()};
 
-      var menu = document.getElementById("sticky-menu");
-      var wrapper = document.getElementById("sticky-wrapper");
-      var sticky = wrapper.offsetTop;
+  var desktopMenu = document.getElementById("sticky-menu");
+  var mobileMenu = document.getElementById("mobile-menu");
+  var wrapper = document.getElementById("sticky-wrapper");
+  var sticky = wrapper.offsetTop;
 
-      function makeSticky() {
-        if (window.pageYOffset >= sticky) {
-          menu.classList.add("sticky");
-        } else {
-          menu.classList.remove("sticky");
-        }
-      }
+  function makeSticky() {
+    if (window.pageYOffset >= sticky) {
+      desktopMenu.classList.add("sticky");
+      mobileMenu.classList.add("sticky");
+    } else {
+      desktopMenu.classList.remove("sticky");
+      mobileMenu.classList.remove("sticky");
+    }}
     </script>
   </body>
 </html>
