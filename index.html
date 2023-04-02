@@ -22,7 +22,7 @@
       src="https://kit.fontawesome.com/2828f7885a.js"
       integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
       crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.coundown.js"></script>
     <link rel="icon" type="image/png" href="image/favicon.png" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -183,29 +183,21 @@
     <div class="main-content">
     <!-- Begin regular-section-->
      <section class="section-light no-padding-top regular-section has-text-centered has-vertically-aligned-content" id="regular-section">
+      <div data-aos="fade-up" data-aos-easing="linear">
+        <img src="image/3859726731_A festival on the beach with a festival theme, log_xl-beta-v2-2-2.png" class="bismillah has-text-centered" alt="woooooow">
+      </div>
+
 
         <p class="bodytext" data-aos="fade-up" data-aos-easing="linear">
-          Hej og velkommen til vores lille bryllups invitation
+          Du kender følelsen, sommersolen bager på solbrændte næser og arme, i hånden er den velskænket fadøl klar, 
           <br>
+          teltene er slået op og musikkens glade toner blandes med duften af mad fra de omkringliggende food trucks. 
           <br>
-          Vi er glade for at kunne dele denne specielle begivenhed med jer og invitere jer til at fejre vores kærlighed på en helt unik og personlig måde. 
+          Det er den lune stemning og hyggelige atmosfære fra sommerens festival, vi tager dig med til. 
           <br>
+          Men den er ikke helt som den plejer, for på denne dag, møder den farverige festivalstemning kærligheden fra strandbrylluppet som holdes ved Nordstrand. 
           <br>
-          Vi tror på, at kærlighed er en universel følelse, der binder os sammen på tværs af traditioner og kulturer. Derfor har vi valgt at skabe en festlig og inkluderende atmosfære for vores store dag.
-          <br>
-          <br>
-          Vores bryllup vil være en eksplosion af farver, musik og dans - en sammenkomst, hvor vi alle kan udtrykke vores glæde og fejre kærligheden. 
-          <br>
-          Vi glæder os til at se jer i jeres mest farverige og kreative påklædning, og vi opfordrer jer til at deltage i den fælles feststemning.
-          <br>
-          <br>
-          På denne hjemmeside vil I kunne finde alle de nødvendige oplysninger om vores bryllupsdag, fra tid og sted til praktiske detaljer og kontaktinformation. 
-          <br>
-          Vi håber, I vil nyde at navigere rundt og forberede jer til den store dag sammen med os.
-          <br>
-          <br>
-          Vi glæder os til at fejre sammen med jer og skabe uforglemmelige minder!
-          <br>
+          Med al vores hjertevarme byder vi dig velkommen til vores kærlighedsfest!
           <br>
           Kærlig hilsen
         </p>
@@ -341,9 +333,6 @@
           <div class="columns is-multiline">  
           <div class="column has-text-centered is-12 prolog">
             <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">Tentang Sherly dan Daeng</h1>
-            
-
-          
           <!-- IMAGES -->  
         <div class=" tile">
           <div class="tile is-ancestor">
@@ -431,10 +420,132 @@
               <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">RSVP</h1>
             </div>
             <div class="column is-12 prolog has-text-centered" data-aos="fade-up" data-aos-easing="linear">
-              <p class="h2 subtitle">
-                Du bedes melde tilbage snarest om du/i kan komme
-                <br>
-                </p>
+              
+              <form 
+              id="rsvpForm"
+              method="POST" 
+              data-email="jakobholmelund@gmail.com"
+              action="https://script.google.com/macros/s/AKfycbzwXACFxVzb0vIJlpkkc6eU4AnNrr5E4Ikrrtvf-KNSCrWhYJk-f2CO6Y0WlT38NTRz/exec">
+              <div class="field is-horizontal">
+                <div class="field-label">
+                  <label class="label">Invitations Kode</label>
+                </div>
+                <div class="field-body">
+                  <div class="field">
+                    <div class="control">
+                      <input class="input" type="text" id="invite_code" name="invite_code" placeholder="Invitations Kode">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="field is-horizontal">
+                  <div class="field-label is-normal">
+                    <label class="label">Navn</label>
+                  </div>
+                  <div class="field-body">
+                    <div class="field">
+                      <p class="control is-expanded has-icons-left">
+                        <input class="input" type="text" placeholder="Navn" id="NameRSVP" name="NameRSVP">
+                        <span class="icon is-small is-left">
+                          <i class="fas fa-user"></i>
+                        </span>
+                      </p>
+                    </div>
+                    <div class="field">
+                      <p class="control is-expanded has-icons-left has-icons-right">
+                        <input class="input is-success" type="email" placeholder="Email" value="jens@hansen.com" id="Email" name="Email">
+                        <span class="icon is-small is-left">
+                          <i class="fas fa-envelope"></i>
+                        </span>
+                        <span class="icon is-small is-right">
+                          <i class="fas fa-check"></i>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="field is-horizontal">
+                  <div class="field-label"></div>
+                  <div class="field-body">
+                    <div class="field is-expanded">
+                      <div class="field has-addons">
+                        <p class="control">
+                          <a class="button is-static">
+                            +45
+                          </a>
+                        </p>
+                        <p class="control is-expanded">
+                          <input class="input" type="tel" placeholder="telefon" id="Phone" name="Phone">
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="field is-horizontal">
+                  <div class="field-label">
+                    <label class="label">Kommer ?</label>
+                  </div>
+                  <div class="field-body">
+                    <div class="field is-narrow">
+                      <div class="control">
+                        <label class="radio">
+                          <input type="radio" name="Comming">
+                          Ja selvfølgelig
+                        </label>
+                        <label class="radio">
+                          <input type="radio" name="Comming">
+                          Nej desværre
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="field is-horizontal">
+                  <div class="field-label is-normal">
+                    <label class="label">Hvem kommer ?</label>
+                  </div>
+                  <div class="field-body">
+                    <div class="field">
+                      <div class="control">
+                        <textarea class="textarea" placeholder="Liste over hvem der kommer inklussiv børn" id="NameList" name="NameList"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="field is-horizontal">
+                  <div class="field-label is-normal">
+                    <label class="label">Camping</label>
+                  </div>
+                  <div class="field-body">
+                    <div class="field">
+                      <div class="control">
+                        <textarea class="textarea" id="Camping" name="Camping" placeholder="Det vil være muligt at overnatte i telt på området, så hvis dette kunne have interesse, skriv jeres ønsker og planer, så finder vi den helt rette løsning"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="field is-horizontal">
+                  <div class="field-label">
+                    <!-- Left empty for spacing -->
+                  </div>
+                  <div class="field-body">
+                    <div class="field">
+                      <div class="control">
+                        <button class="button is-primary" id="submitRSVPForm" type="button">
+                          Svar
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <div class="space40px"></div>
+              <div id="feedback" class="notification is-hidden"></div>
               <div class="space40px"></div>
 
               <div class="space40px"></div>
