@@ -571,34 +571,7 @@ Kommer du med offentligt transport, kan du stå af ved Nyled Station, og ved aft
     } else {
       desktopMenu.classList.remove("sticky");
       mobileMenu.classList.remove("sticky");
-    }}
-
-    document.addEventListener("DOMContentLoaded", function() {
-  var lazyVideos = [].slice.call(document.querySelectorAll(".your-video-class"));
-
-  if ("IntersectionObserver" in window) {
-    let lazyVideoObserver = new IntersectionObserver(function(entries, observer) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-          let lazyVideo = entry.target;
-          lazyVideo.src = lazyVideo.dataset.src;
-          lazyVideo.load();
-          lazyVideoObserver.unobserve(lazyVideo);
-        }
-      });
-    });
-
-    lazyVideos.forEach(function(lazyVideo) {
-      lazyVideoObserver.observe(lazyVideo);
-    });
-  } else {
-    // If the IntersectionObserver API is not supported, load the video immediately
-    lazyVideos.forEach(function(lazyVideo) {
-      lazyVideo.src = lazyVideo.dataset.src;
-      lazyVideo.load();
-    });
-  }
-});
+    }};
     </script>
 
     
