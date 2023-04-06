@@ -686,9 +686,9 @@ body.preloader-site {
 }
 
 .section-light {
-  background-image: url(../image/vectortipiFix.png);
-  background-position: bottom -10px center;
-  background-repeat: repeat-x;
+  background-image: url(../image/flowertens.png);
+  background-position: bottom 0 center;
+  background-repeat: no-repeat;
   background-size: 200px;
 }
 
