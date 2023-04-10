@@ -251,10 +251,11 @@ html {
 
 .main-content .section-light {
   padding: 80px 40px;
+  padding-bottom: 120px;
 }
 
 .main-content .section-light.regular-section {
-  padding-bottom: 80px;
+  padding-bottom: 120px;
 }
 
 .main-content .section-light.regular-section .is-larger {
@@ -686,10 +687,11 @@ body.preloader-site {
 }
 
 .section-light {
-  background-image: url(../image/flowertens.png);
+  background-image: url(../image/sunsetbottom.jpg);
   background-position: bottom 0 center;
   background-repeat: no-repeat;
-  background-size: 200px;
+  background-size: 100%;
+
 }
 
 .instagram {
