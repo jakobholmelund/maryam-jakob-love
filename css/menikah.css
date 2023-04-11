@@ -179,7 +179,7 @@ html {
 }
 
 .main-content .section-darker {
-  background-color: #EDD2D1;
+  background-color: #9da998;
   padding: 80px 40px;
 }
 
@@ -296,6 +296,18 @@ html {
   font-size: 24px;
 }
 
+.main-content .section-darker h1 {
+  color: #ffffff;
+}
+
+.main-content .section-darker p {
+  color: #ffffff;
+}
+
+.main-content .section-darker p strong {
+  color: #ffffff;
+}
+
 .main-content .section-light.contact {
   padding: 80px;
 }
@@ -360,11 +372,11 @@ vertical-align: middle;
 }
 
 .bodytext {
-  font-size: 18px;
+  font-size: 1.2rem;
 }
 
 .waktu {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -376,7 +388,7 @@ vertical-align: middle;
 }
 
 .tempat {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-family: 'Raleway', sans-serif;
   font-size: ;
   margin-bottom: 50px;
@@ -538,12 +550,16 @@ body.preloader-site {
 }
 
 
+
+
+
+
 .btn-cta:hover {
   color:white;
-  background-color: #bf7877;
+  background-color: #7e887a;
   font-size: 1.2rem;
   border-radius: 10px;
-  border: 2px solid #bf7877;
+  border: 2px solid #7e887a;
   width:  210px;
   height: 65px;
   align-items: center;
@@ -551,15 +567,27 @@ body.preloader-site {
 }
 
 .btn-cta {
-  background-color: #996E6D;
+  background-color: #5e655b;
   width:  210px;
   height: 65px;
   color: white;
   font-size: 1.2rem;
-  border: 2px solid #996E6D;
+  border: 2px solid #5e655b;
   border-radius: 10px;
   align-items: center;
   margin: 1rem;
+}
+
+.hero .btn-cta:hover {
+  background-color: #bf7877;
+  border: 2px solid #bf7877;
+
+}
+
+.hero .btn-cta {
+  background-color: #996E6D;
+  border: 2px solid #996E6D;
+
 }
 
 .cashbac-logo-inline {
@@ -604,68 +632,15 @@ body.preloader-site {
 {color:ghostwhite}
 
 
-.dusty-pink {color: #D8A9A8}
-.dusty-pink-lighter {color: #EDD2D1}
-.dusty-pink-lightest {color: #F4E2E2}
-.dusty-pink-darker {color: #BC8887}
-.dusty-pink-darkest {color: #996E6D}
+.dusty-pink {color: #9da998}
+.dusty-pink-lighter {color: #7e887a}
+.dusty-pink-lightest {color: #5e655b}
+.dusty-pink-darker {color: #4d534b}
+.dusty-pink-darkest {color: #353933}
 
 .tile {
   border-radius: 10px;
 }
-
-
-.foto1 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/sherly-daeng-kang-emil.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat:no-repeat;
-  min-height: 24rem;
-}
-
-
-.foto2 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/sherly-daeng-cashbac.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat:no-repeat;
-  min-height: 24rem;
-}
-
-.foto3 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/sherly-daeng-selfie.jpg");
-  background-size: cover;
-  background-position: top;
-  background-repeat:no-repeat;
-  min-height: 24rem;
-}
-
-.foto4 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/sherly-daeng-lamaran.jpg");
-  background-size: cover;
-  background-position: top;
-  background-repeat:no-repeat;
-  min-height: 24rem;
-}
-
-.foto5 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/sherly-daeng-red-car.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat:no-repeat;
-  min-height: 24rem;
-}
-
-
-.foto6 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/sherly-daeng-engagement-ami.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat:no-repeat;
-  min-height: 24rem;
-}
-
-
 
 .title-foto {
   font-size: 18pt;
@@ -687,10 +662,10 @@ body.preloader-site {
 }
 
 .section-light {
-  background-image: url(../image/sunsetbottom.jpg);
-  background-position: bottom 0 center;
+  background-image: url(../image/flowers4.png);
+  background-position: bottom -12rem center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 20rem;
 
 }
 
