@@ -82,16 +82,16 @@ $(document).ready(function($) {
         if (response.result === 'success') {
           console.log("Form submitted successfully");
           feedbackElement.addClass("is-success");
-          feedbackElement.text("Form submitted successfully"); // Or use response.message if it's available in the success response
+          feedbackElement.text("Tak for svar !"); // Or use response.message if it's available in the success response
         } else {
           console.error("Error submitting form");
           feedbackElement.addClass("is-danger");
-          feedbackElement.text(response.message);
+          feedbackElement.text("Noget gik galt: " + response.message);
         }
 
-        setTimeout(function () {
-          feedbackElement.addClass("is-hidden");
-        }, 5000);
+        // setTimeout(function () {
+        //   feedbackElement.addClass("is-hidden");
+        // }, 5000);
       },
       error: function (error) {
         console.error("Error submitting form", error);
@@ -106,9 +106,9 @@ $(document).ready(function($) {
         feedbackElement.text(errorMessage); // Update the feedback text with the message from the API or a default error message
       
         // Optionally, hide the feedback element after a certain time
-        setTimeout(function () {
-          feedbackElement.addClass("is-hidden");
-        }, 5000);
+        // setTimeout(function () {
+        //   feedbackElement.addClass("is-hidden");
+        // }, 5000);
       },
     });
   });

@@ -161,6 +161,7 @@ html {
 
 .space40px{
   height: 40px;
+  display: block;
 }
 
 .space24px{
