@@ -83,6 +83,7 @@ $(document).ready(function($) {
           console.log("Form submitted successfully");
           feedbackElement.addClass("is-success");
           feedbackElement.text("Tak for svar !"); // Or use response.message if it's available in the success response
+          $('#submitRSVPForm').prop('disabled', true);
         } else {
           console.error("Error submitting form");
           feedbackElement.addClass("is-danger");
