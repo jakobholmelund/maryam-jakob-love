@@ -20,6 +20,30 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     });
   }
+
+  // Get all "navbar-item" elements inside "navbar-menu"
+  var $navbarItems = Array.prototype.slice.call(
+    document.querySelectorAll("#mobile-nav .navbar-item"),
+    0
+  );
+  // Add a click event on each of them
+  $navbarItems.forEach(function ($el) {
+    $el.addEventListener("click", function () {
+      var $navbarBurger = document.querySelector(".navbar-burger.is-active");
+      if ($navbarBurger) {
+        toggleMenu($navbarBurger);
+      }
+    });
+  });
+
+  function toggleMenu($el) {
+    // Get the target from the "data-target" attribute
+    var target = $el.dataset.target;
+    var $target = document.getElementById(target);
+    // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+    $el.classList.toggle("is-active");
+    $target.classList.toggle("is-active");
+  }
 });
 
 // Smooth Anchor Scrolling
