@@ -513,12 +513,12 @@
                     <div class="field">
                       <div class="control has-text-centered centered">
                         <label class="radio is-size-4">
-                          <input type="radio"  class="big-radio" name="Comming" checked>
+                          <input type="radio"  class="big-radio" name="Comming" value="yes" checked >
                           Kommer selvfølgelig !
                         </label>
                         <br>
                         <label class="radio is-size-4">
-                          <input type="radio"  class="big-radio" name="Comming">
+                          <input type="radio"  class="big-radio" name="Comming" value="no">
                           Kommer desværre ikke
                         </label>
                       </div>
@@ -558,17 +558,18 @@
                   </div>
                   <div class="field-body">
                     <div class="field">
-                      <div class="control">
+                      <div class="control is-flex" style="justify-content: left; align-items: left; min-height: 100px;">
                         <button class="button is-primary" id="submitRSVPForm" type="button">
                           Svar
                         </button>
+                        <div id="spinner" class="spinner" style="display: none;"></div>
                       </div>
                     </div>
                   </div>
                 </div>
               </form>
-              <div class="space40px"></div>
               <div id="feedback" class="notification is-hidden"></div>
+              
             </div>
  
          </div>

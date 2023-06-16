@@ -85,6 +85,9 @@ $(document).ready(function($) {
     const NameList = $("#NameList").val();
     const Camping = $("#Camping").val();
 
+    $('#submitRSVPForm').prop('disabled', true);
+    $('#spinner').show();
+
     // Perform input validation if necessary
 
     $.ajax({
@@ -105,18 +108,22 @@ $(document).ready(function($) {
 
         if (response.result === 'success') {
           console.log("Form submitted successfully");
+          feedbackElement.removeClass("is-danger");
           feedbackElement.addClass("is-success");
           feedbackElement.text("Tak for svar !"); // Or use response.message if it's available in the success response
-          $('#submitRSVPForm').prop('disabled', true);
+          //$('#submitRSVPForm').prop('disabled', true);
         } else {
           console.error("Error submitting form");
           feedbackElement.addClass("is-danger");
           feedbackElement.text("Noget gik galt: " + response.message);
+          $('#submitRSVPForm').prop('disabled', false);
         }
 
         // setTimeout(function () {
         //   feedbackElement.addClass("is-hidden");
         // }, 5000);
+        //$('#submitRSVPForm').prop('disabled', false);
+        $('#spinner').hide();
       },
       error: function (error) {
         console.error("Error submitting form", error);
@@ -134,6 +141,8 @@ $(document).ready(function($) {
         // setTimeout(function () {
         //   feedbackElement.addClass("is-hidden");
         // }, 5000);
+        $('#submitRSVPForm').prop('disabled', false);
+        $('#spinner').hide();
       },
     });
   });
