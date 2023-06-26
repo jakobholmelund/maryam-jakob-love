@@ -698,3 +698,23 @@ body.preloader-site {
   text-align: center;
   padding: 10px;
 }
+
+.center-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+@media (max-width: 599px) {
+  .center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+}
+
+.list-custom{
+  color:#fff;
+}
